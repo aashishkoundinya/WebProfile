@@ -1,0 +1,132 @@
+html{
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Titillium Web', sans-serif;
+}  
+
+body {
+    margin: 0;
+    background-color: #24292E;
+}
+
+nav {
+    font-family: 'Titillium Web', sans-serif;
+    color: #464c51;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 40px;
+    float: none;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    color: #464c51;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #fd0037;
+    transition: color 0.3s ease;
+    font-size: 30px;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 55%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.container-2 h1 {
+    font-size: 80px;
+    color: white;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 1em;
+    padding: 10px;
+}
+
+.project-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:first baseline;
+}
+
+.item {
+    margin: 0.5em;
+    padding: 1em;
+    width: 300px;
+    max-height: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.306);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item h1 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.item p {
+    color: white;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 100;
+    text-align: start;
+    margin: 0px 0px 20px 0px;
+}
+
+.redirect a {
+    color: #24292E;
+    background-color: white;
+    font-size: 20px;
+    border: 1px soid black;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.card * {
+    margin: 0.25em;
+    padding: 0.25em;
+}
+  
+.card p {
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.link {
+    font-weight: 600;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 2px 20px 2px 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.link:hover {
+    text-decoration: none;
+    background-color: #fd0037;
+    border: 1px solid #fd0037;
+    color: white;
+    transition: 0.3s ease-in-out;
+}

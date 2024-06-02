@@ -1,0 +1,285 @@
+html{
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Titillium Web', sans-serif;
+}  
+
+body {
+    margin: 0;
+    background-color: #24292E;
+}
+
+h1 {
+    font-size: xx-large;
+    color: #464c51;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 40px;
+    margin: 0;
+}
+
+nav {
+    font-family: 'Titillium Web', sans-serif;
+    color: #464c51;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 40px;
+    float: none;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    color: #464c51;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #fd0037;
+    transition: color 0.3s ease;
+    font-size: 30px;
+}
+
+#hi {
+    font-size: 180px;
+}
+
+#im {
+    color: white;
+}
+
+#name {
+    color: #fd0037;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.container-1 {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.hello {
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+#socials, #skills {
+    background-color: #24292E;
+}
+
+#about, #projects {
+    background-color: white;
+}
+
+#about, #socials, #skills, #projects {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+#about p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    color: #464c51;
+    font-weight: 500;
+    text-align: start;
+}
+
+#about h1 {
+    font-size: 150px;
+    margin: 0;
+}
+
+#socials h1, #skills h1 {
+    color: white;
+}
+
+.container-skill {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 60vw;
+    margin: auto;
+    min-height: 100vh;
+}
+
+.container-skill h1 {
+    font-size: 150px;
+}
+
+.skills-list li {
+    list-style-type: none;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    justify-content: space-between;
+}
+
+.single-skill {
+    display: inline-flex;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px 0px 40px;
+}
+
+.single-skill h3 {
+    font-size: 30px;
+    padding: 0px 0px 0px 10px;
+}
+
+.skill-list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    place-content: space-evenly;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.container-2 h1 {
+    font-size: 150px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em;
+    padding: 10px;
+}
+
+.project-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item {
+    margin: 0.5em;
+    padding: 1em;
+    width: 300px;
+    max-height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item h1 {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.item p {
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    text-align: start;
+}
+
+.redirect a {
+    color: black;
+    font-size: 20px;
+    text-decoration: underline;
+    border: 1px soid black;
+}
+
+.more {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 30px auto 0 auto;
+    
+}
+
+.more a {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color:#24292E;
+    text-decoration: none;
+    border: 1px solid #24292E;
+    border-radius: 10px;
+    padding: 4px 20px 4px 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.more a:hover {
+    background-color: #fd0037;
+    border: 1px solid #fd0037;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.link {
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2px 20px 2px 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.link:hover {
+    background-color: #24292E;
+    border: 1px solid #24292E;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.fa-square-github, .fa-linkedin, .fa-x-twitter, .fa-envelope {
+    font-size: 80px;
+    padding: 40px;
+}
+
+.fa-html5, .fa-css3-alt, .fa-c, .fa-python, .fa-java, .fa-git-alt, .fa-discord,
+.fa-markdown, .fa-js, .fa-unity, .fa-github {
+    font-size: 60px;
+}
