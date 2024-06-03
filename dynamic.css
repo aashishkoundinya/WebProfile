@@ -89,6 +89,10 @@
         text-align: center;
     }
 
+    .item {
+        width: 250px;
+    }
+
     .item h1 {
         font-size: 1.4rem;
     }
