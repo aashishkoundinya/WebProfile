@@ -85,6 +85,10 @@
         width: 95vw;
     }
 
+    #about-me {
+        text-align: center;
+    }
+
     .item h1 {
         font-size: 1.4rem;
     }
