@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dynamic.css">
     <title>Aashish</title>
 </head>
 <body>
@@ -41,22 +42,22 @@
         <div class="hello">
             <h1 id="hi">Hello,</h1>
             <h1 id="im">I'm <span id="name">Aashish A Koundinya</span></h1>
-            <h2>3rd Year Engineering Student</h2>
+            <h2 id="im-ext">3rd Year Engineering Student</h2>
         </div>
         <script src="viewport.js"></script>
     </section>
 
     <section id="about">
-        <div class="container-1">
-            <h1 class="heading">About</h1>
-            <p class="about-me">I'm Aashish, a 3rd-year engineering student with an insatiable appetite for technology. Milkshakes fuel my coding adventures! Always eager to learn, I'm currently diving headfirst into Full-Stack Development, relishing the challenge of creating projects and exploring new possibilities. When I'm not coding, you might find me conquering epic quests in virtual worlds!</p>
+        <div class="container">
+            <h1 id="aboutheading">About</h1>
+            <p id="about-me">I'm Aashish, a 3rd-year engineering student with an insatiable appetite for technology. Milkshakes fuel my coding adventures! Always eager to learn, I'm currently diving headfirst into Full-Stack Development, relishing the challenge of creating projects and exploring new possibilities. When I'm not coding, you might find me conquering epic quests in virtual worlds!</p>
         </div>
         <script src="viewport.js"></script>
     </section>
 
     <section id="skills">
-        <div class="container-skill">
-            <h1>Skills</h1>
+        <div class="container">
+            <h1 id="skillheading">Skills</h1>
             <ul class="skills-list">
                 <li class="single-skill">
                     <i class="fa-brands fa-html5" style="color: #E54D26;"></i>
@@ -128,11 +129,11 @@
     </section>     
 
     <section id="projects">
-        <div class="container-2">
-            <h1>Projects</h1>
+        <div class="container">
+            <h1 id="projectheading">Projects</h1>
             <div class="project-menu">
                 <div class="item">
-                    <h1>Discord Weather Bot</h1>
+                    <h1 class="individualprojectheading">Discord Weather Bot</h1>
                     <p>Weather bot created using NextCord API which shows realtime weather data.</p>
                     <div class="redirect">
                         <a class="link" href="https://github.com/aashishkoundinya/Weather-API-Discord-Bot" target="_blank">View</a>
@@ -140,7 +141,7 @@
                 </div>
 
                 <div class="item">
-                    <h1>Virtual Guy</h1>
+                    <h1 class="individualprojectheading">Virtual Guy</h1>
                     <p>Game made in unity</p>
                     <div class="redirect">
                         <a class="link" href="https://github.com/aashishkoundinya/Virtual-Guy" target="_blank">View</a>
@@ -148,24 +149,25 @@
                 </div>
 
                 <div class="item">
-                    <h1>Login System</h1>
+                    <h1 class="individualprojectheading">Login System</h1>
                     <p>C++ code for basic Login System</p>
                     <div class="redirect">
                         <a class="link" href="https://github.com/aashishkoundinya/Login-System" target="_blank">View</a>
                     </div>
                 </div>
-                
-                <div class="more">
-                    <a href="projects.html">View all Projects</a>
-                </div>
             </div>
+
+            <div class="more">
+                <a href="projects.html">View all Projects</a>
+            </div>
+
         </div>
         <script src="viewport.js"></script>
     </section>
 
     <section id="socials">
         <div class="container">
-            <h1>You can find me on!!</h1>
+            <h1 id="findme">You can find me on!!</h1>
 
             <div class="icons">
                 <a href="https://github.com/aashishkoundinya" target="_blank">

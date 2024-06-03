@@ -4,34 +4,23 @@ html{
     font-family: 'Titillium Web', sans-serif;
 }  
 
+* {
+    transition: all 0.3s ease-in-out;
+}
+
 body {
     margin: 0;
     background-color: #24292E;
 }
 
-h1 {
-    font-size: xx-large;
-    color: #464c51;
-    font-size: 4.5rem;
-    font-weight: 700;
-    margin: 0;
-}
-
-h2 {
-    color: white;
-    font-size: 2.5rem;
-    margin: 0;
-}
-
 nav {
+    display: flex;
     color: #464c51;
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 200;
     padding: 2rem;
-    float: none;
     position: fixed;
-    box-sizing: border-box;
 }
 
 nav li {
@@ -52,14 +41,44 @@ nav a:hover {
 
 #hi {
     font-size: 10rem;
+    color: #464c51;
+    font-weight: 700;
+    margin: 0;
 }
 
 #im {
+    font-size: 4.5rem;
+    font-weight: 700;
     color: white;
+    margin: 0;
+}
+
+#im-ext {
+    color: white;
+    margin: 0;
+    font-size: 2.5rem;
 }
 
 #name {
     color: #fd0037;
+}
+
+#aboutheading, #skillheading, #projectheading, #findme {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+#aboutheading {
+    font-size: 9rem;
+}
+
+#skillheading, #findme {
+    color: white;
+}
+
+#projectheading {
+    color: #24292E;
 }
 
 .container {
@@ -68,14 +87,9 @@ nav a:hover {
     text-align: center;
     align-items: center;
     justify-content: center;
-    max-width: 60vw;
+    max-width: 65vw;
     margin: 0 auto;
     min-height: 100vh;
-}
-
-.container-1 {
-    width: 60%;
-    margin: 0 auto;
 }
 
 .hello {
@@ -87,7 +101,7 @@ nav a:hover {
 }
 
 
-#socials, #skills {
+#skills, #socials {
     background-color: #24292E;
 }
 
@@ -95,102 +109,43 @@ nav a:hover {
     background-color: white;
 }
 
-#about, #socials, #skills, #projects {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    max-width: 100vw;
-    margin: 0 auto;
-    min-height: 100vh;
-}
-
-#about p {
-    font-size: 2rem;
+#about-me {
+    font-size: 1.7rem;
     color: #464c51;
     font-weight: 500;
-    text-align: start;
+    text-align: justify;
 }
 
-#about h1 {
-    font-size: 10rem;
-    margin: 0;
-}
-
-#socials h1, #skills h1 {
-    color: white;
-}
-
-.container-skill {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    max-width: 60vw;
-    margin: auto;
-    min-height: 100vh;
-}
-
-.container-skill h1 {
-    font-size: 10rem;
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .skills-list li {
-    list-style-type: none;
     color: white;
-    justify-content: space-between;
 }
 
 .single-skill {
     display: inline-flex;
     text-align: start;
-    justify-content: center;
     align-items: center;
     padding: 0rem 2rem 0rem 2rem;
 }
 
 .single-skill h3 {
     font-size: 1.5rem;
-    padding: 0rem 0rem 0rem 1rem;
-}
-
-.skill-list {
-    display: grid;
-    max-width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    place-content: space-evenly;
-}
-
-.container-2 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    max-width: 60vw;
-    margin: 0 auto;
-    min-height: 100vh;
-}
-
-.container-2 h1 {
-    font-size: 10rem;
-}
-
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    margin: 1em;
-    padding: 1rem;
+    padding-left: 1rem;
 }
 
 .project-menu {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-around;
+}
+
+.individualprojectheading {
+    margin: 0;
 }
 
 .item {
@@ -215,46 +170,14 @@ nav a:hover {
 
 .item p {
     font-size: 1.5rem;
-    font-family: 'Titillium Web', sans-serif;
     font-weight: 400;
     text-align: start;
 }
 
-.redirect a {
+.link {
     color: black;
     font-size: 1.5rem;
     text-decoration: underline;
-    border: 1px soid black;
-}
-
-.more {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin: 1.5rem auto 0 auto;
-    
-}
-
-.more a {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color:#24292E;
-    text-decoration: none;
-    border: 1px solid #24292E;
-    border-radius: 10px;
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-    transition: 0.3s ease-in-out;
-}
-
-.more a:hover {
-    background-color: #fd0037;
-    border: 1px solid #fd0037;
-    color: white;
-    transition: 0.3s ease-in-out;
-}
-
-.link {
     font-weight: 600;
     border: 1px solid black;
     border-radius: 10px;
@@ -269,12 +192,39 @@ nav a:hover {
     transition: 0.3s ease-in-out;
 }
 
-.fa-square-github, .fa-linkedin, .fa-x-twitter, .fa-envelope {
+.more {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 1.5rem auto 0 auto;
+    margin-bottom: 2rem;
+}
+
+.more a {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#24292E;
+    text-decoration: none;
+    border: 1px solid #24292E;
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem ;
+    transition: 0.3s ease-in-out;
+}
+
+.more a:hover {
+    background-color: #fd0037;
+    border: 1px solid #fd0037;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.icons a {
+    text-decoration: none;
     font-size: 5rem;
     padding: 4rem;
 }
 
-.fa-html5, .fa-css3-alt, .fa-c, .fa-python, .fa-java, .fa-git-alt, .fa-discord,
-.fa-markdown, .fa-js, .fa-unity, .fa-github {
+.single-skill {      
     font-size: 4rem;
 }

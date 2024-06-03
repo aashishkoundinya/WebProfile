@@ -1,0 +1,112 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 75vw;
+    }
+
+    #hi {
+        font-size: 8rem;
+    }
+
+    #im {
+        font-size: 4rem;
+    }
+
+    #im-ext {
+        font-size: 2rem;
+    }
+
+    #aboutheading, #skillheading, #projectheading, #findme {
+        font-size: 4.5rem;
+    }
+    
+    #aboutheading {
+        font-size: 8rem;
+    }
+
+    .icons a {
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    #hi {
+        font-size: 5rem;
+    }
+
+    #im {
+        font-size: 3rem;
+    }
+
+    #im-ext {
+        font-size: 1.5rem;
+    }
+
+    #aboutheading, #skillheading, #projectheading, #findme {
+        font-size: 4rem;
+    }
+    
+    #aboutheading {
+        font-size: 6rem;
+    }
+
+    #about-me {
+        font-size: 1.3rem;
+    }
+
+    .item h1 {
+        font-size: 1.7rem;
+    }
+
+    .item p {
+        font-size: 1.3rem;
+    }
+
+    .link {
+        font-size: 1.3rem;
+    }
+
+    .more a {
+        font-size: 1.3rem;
+    }
+
+    .icons a {
+        font-size: 4rem;
+        padding: 2rem;
+    }
+
+    .container {
+        width: 85vw;
+    }
+
+}
+
+@media screen and (max-width: 568px) {
+    .container {
+        width: 95vw;
+    }
+
+    .item h1 {
+        font-size: 1.4rem;
+    }
+
+    .item p {
+        font-size: 1.1rem;
+    }
+
+    .link {
+        font-size: 1.1rem;
+    }
+
+    #findme {
+        font-size: 3rem;
+    }
+
+    .icons a {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+}
