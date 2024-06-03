@@ -33,7 +33,7 @@
         font-size: 5rem;
     }
 
-    #im, #about-me, .item p, .link, .more a {
+    #im {
         font-size: 3rem;
     }
 
@@ -49,8 +49,24 @@
         font-size: 6rem;
     }
 
+    #about-me {
+        font-size: 1.3rem;
+    }
+
     .item h1 {
         font-size: 1.7rem;
+    }
+
+    .item p {
+        font-size: 1.3rem;
+    }
+
+    .link {
+        font-size: 1.3rem;
+    }
+
+    .more a {
+        font-size: 1.3rem;
     }
 
     .icons a {
@@ -69,15 +85,15 @@
         width: 95vw;
     }
 
-    #about-me {
-        text-align: start;
-    }
-
     .item h1 {
         font-size: 1.4rem;
     }
 
-    .item p, .link {
+    .item p {
+        font-size: 1.1rem;
+    }
+
+    .link {
         font-size: 1.1rem;
     }
 
