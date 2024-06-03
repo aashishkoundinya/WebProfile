@@ -53,6 +53,10 @@
         font-size: 1.3rem;
     }
 
+    .item {
+        max-width: 250px;
+    }
+
     .item h1 {
         font-size: 1.7rem;
     }
@@ -87,10 +91,6 @@
 
     #about-me {
         text-align: center;
-    }
-
-    .item {
-        width: 200px;
     }
 
     .item h1 {
