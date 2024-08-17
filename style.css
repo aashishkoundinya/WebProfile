@@ -1,0 +1,230 @@
+html{
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Titillium Web', sans-serif;
+}  
+
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    margin: 0;
+    background-color: #24292E;
+}
+
+nav {
+    display: flex;
+    color: #464c51;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 200;
+    padding: 2rem;
+    position: fixed;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    color: #464c51;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #fd0037;
+    transition: color 0.3s ease;
+    font-size: 2rem;
+}
+
+#hi {
+    font-size: 10rem;
+    color: #464c51;
+    font-weight: 700;
+    margin: 0;
+}
+
+#im {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+#im-ext {
+    color: white;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+#name {
+    color: #fd0037;
+}
+
+#aboutheading, #skillheading, #projectheading, #findme {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+#aboutheading {
+    font-size: 9rem;
+}
+
+#skillheading, #findme {
+    color: white;
+}
+
+#projectheading {
+    color: #24292E;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 65vw;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.hello {
+    margin: 0;
+    position: absolute;
+    top: 45vh;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+#skills, #socials {
+    background-color: #24292E;
+}
+
+#about, #projects {
+    background-color: white;
+}
+
+#about-me {
+    font-size: 1.7rem;
+    color: #464c51;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.skills-list li {
+    color: white;
+}
+
+.single-skill {
+    display: inline-flex;
+    text-align: start;
+    align-items: center;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.single-skill h3 {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.project-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.individualprojectheading {
+    margin: 0;
+}
+
+.item {
+    margin: 0.5em;
+    padding: 1em;
+    width: 300px;
+    max-height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item h1 {
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: start;
+}
+
+.item p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: start;
+}
+
+.link {
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.1rem 1.2rem 0.1rem 1.2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.link:hover {
+    background-color: #24292E;
+    border: 1px solid #24292E;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.more {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 1.5rem auto 0 auto;
+    margin-bottom: 2rem;
+}
+
+.more a {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#24292E;
+    text-decoration: none;
+    border: 1px solid #24292E;
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem ;
+    transition: 0.3s ease-in-out;
+}
+
+.more a:hover {
+    background-color: #fd0037;
+    border: 1px solid #fd0037;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.icons a {
+    text-decoration: none;
+    font-size: 5rem;
+    padding: 4rem;
+}
+
+.single-skill {      
+    font-size: 4rem;
+}
