@@ -18,6 +18,7 @@ nav {
     float: none;
     position: fixed;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 nav li {
@@ -41,15 +42,16 @@ nav a:hover {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    max-width: 55vw;
+    max-width: 1400px;
+    width: 80%;
     margin: 0 auto;
     min-height: 100vh;
-    margin-bottom: 5rem;
 }
 
 .container-2 h1 {
     font-size: 5rem;
     color: white;
+    margin-bottom: 3rem;
 }
 
 .projects {
@@ -65,20 +67,29 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    margin-bottom: 5rem;
 }
 
 .item {
-    margin: 0.5em;
-    padding: 1rem;
+    margin: 0;
+    padding: 1.5rem;
     width: 300px;
-    max-height: 400px;
+    min-height: 300px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .item h1 {
@@ -86,15 +97,30 @@ nav a:hover {
     font-size: 1.5rem;
     font-weight: 700;
     text-align: start;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
 }
 
 .item p {
     color: white;
     font-size: 1rem;
     font-family: 'Titillium Web', sans-serif;
-    font-weight: 250;
+    font-weight: 300;
     text-align: justify;
-    margin: 0px 0px 30px 0px;
+    margin: 0 0 1.5rem 0;
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: 150px;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.redirect {
+    margin-top: auto;
+    align-self: flex-start;
 }
 
 .redirect a {
@@ -108,22 +134,17 @@ nav a:hover {
 .redirect a:hover {
     color: #fd0037;
 }
-  
-.card p {
-    text-align: justify;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
 
 .link {
-    border: 0.5px solid rgb(255, 255, 255, 0.3);
-    padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    padding: 0.3rem 0.7rem;
     transition: 0.3s ease-in-out;
+    display: inline-block;
 }
 
 .link:hover {
     text-decoration: none;
     border: 1px solid #fd0037;
-    color: white;
+    color: #fd0037;
     transition: 0.3s ease-in-out;
 }

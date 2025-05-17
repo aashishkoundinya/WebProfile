@@ -17,6 +17,7 @@ nav {
     font-weight: 200;
     padding: 2rem;
     position: fixed;
+    z-index: 100;
 }
 
 nav li {
@@ -53,10 +54,6 @@ nav a:hover {
     color: white;
     margin: 0;
     font-size: 2.5rem;
-}
-
-#print {
-    color: #464c51;
 }
 
 #name {
@@ -100,7 +97,6 @@ nav a:hover {
     transform: translateY(-50%);
 }
 
-
 #skills, #socials {
     background-color: #24292E;
 }
@@ -116,105 +112,6 @@ nav a:hover {
     text-align: justify;
 }
 
-.skills-list li {
-    color: white;
-}
-
-.project-menu {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.individualprojectheading {
-    margin: 0;
-}
-
-.item {
-    margin: 0.5em;
-    padding: 1em;
-    width: calc(33.33% - 2em); 
-    min-width: 250px;
-    max-width: 350px;
-    max-height: 350px;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-
-.item h1 {
-    color: black;
-    font-size: clamp(1.3rem, 2.5vw, 1.7rem);
-    font-weight: 700;
-    text-align: start;
-}
-
-.item p {
-    font-size: clamp(1.1rem, 2vw, 1.5rem); 
-    font-weight: 400;
-    text-align: start;
-}
-
-.link {
-    color: black;
-    font-size: 1.5rem;
-    text-decoration: underline;
-    font-weight: 600;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 0.1rem 1.2rem 0.1rem 1.2rem;
-    transition: 0.3s ease-in-out;
-}
-
-.link:hover {
-    background-color: #24292E;
-    border: 1px solid #24292E;
-    color: white;
-    transition: 0.3s ease-in-out;
-}
-
-.more {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin: 1.5rem auto 0 auto;
-    margin-bottom: 2rem;
-}
-
-.more a {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color:#24292E;
-    text-decoration: none;
-    border: 1px solid #24292E;
-    border-radius: 10px;
-    padding: 0.5rem 1.5rem ;
-    transition: 0.3s ease-in-out;
-}
-
-.more a:hover {
-    background-color: #fd0037;
-    border: 1px solid #fd0037;
-    color: white;
-    transition: 0.3s ease-in-out;
-}
-
-.icons a {
-    text-decoration: none;
-    font-size: 5rem;
-    padding: 4rem;
-}
-
-.single-skill {      
-    font-size: 2.5rem;
-}
-
 .skills-list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -223,6 +120,11 @@ nav a:hover {
     padding: 0;
     margin: 0 auto;
     justify-content: center;
+}
+
+.skills-list li {
+    color: white;
+    list-style-type: none;
 }
 
 .single-skill {
@@ -245,6 +147,121 @@ nav a:hover {
 .single-skill h3 {
     font-size: 1.5rem;
     margin: 0;
+}
+
+.project-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.individualprojectheading {
+    margin: 0;
+}
+
+.item {
+    margin: 0;
+    padding: 1.5rem;
+    width: calc(33.33% - 3rem);
+    min-width: 250px;
+    max-width: 350px;
+    min-height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item h1 {
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: start;
+    margin-top: 0;
+}
+
+.item p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: start;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.redirect {
+    margin-top: auto;
+}
+
+.link {
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.1rem 1.2rem;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.link:hover {
+    background-color: #24292E;
+    border: 1px solid #24292E;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.more {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.more a {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #24292E;
+    text-decoration: none;
+    border: 1px solid #24292E;
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.more a:hover {
+    background-color: #fd0037;
+    border: 1px solid #fd0037;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icons a {
+    text-decoration: none;
+    font-size: 5rem;
+    padding: 2rem 4rem;
+    transition: transform 0.3s ease;
+}
+
+.icons a:hover {
+    transform: translateY(-10px);
 }
 
 #findme {
