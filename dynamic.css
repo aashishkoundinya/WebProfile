@@ -19,12 +19,37 @@
         font-size: 4.5rem;
     }
 
+    .icons {
+        width: 100vw;
+    }
+
     .icons a {
         font-size: 4.5rem;
     }
 
     .skills-list {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .item {
+        width: calc(33.33% - 2em);
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .item {
+        width: calc(33.33% - 2em);
+        min-width: 180px;
+        font-size: 0.9em;
+    }
+    
+    .item h1 {
+        font-size: 1.5rem;
+    }
+    
+    .item p {
+        font-size: 1.2rem;
     }
 }
 
@@ -59,7 +84,12 @@
 
     .item {
         max-width: 250px;
+        width: calc(50% - 2em);
         max-height: 500px;
+    }
+
+    .project-menu {
+        width: 90vw;
     }
 
     .item h1 {
@@ -76,6 +106,10 @@
 
     .more a {
         font-size: 1.3rem;
+    }
+
+    .icons {
+        width: 100vw;
     }
 
     .icons a {
@@ -122,6 +156,10 @@
 
     #findme {
         font-size: 3rem;
+    }
+
+    .icons {
+        width: 100vw;
     }
 
     .icons a {
