@@ -131,19 +131,6 @@ nav a:hover {
     margin: 0;
 }
 
-/*.item {
-    margin: 0.5em;
-    padding: 1em;
-    width: 300px;
-    max-height: 300px;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-}*/
-
 .item {
     margin: 0.5em;
     padding: 1em;
@@ -160,28 +147,15 @@ nav a:hover {
     box-sizing: border-box;
 }
 
-/*.item h1 {
-    color: black;
-    font-size: 1.7rem;
-    font-weight: 700;
-    text-align: start;
-}
-
-.item p {
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: start;
-}*/
-
 .item h1 {
     color: black;
-    font-size: clamp(1.3rem, 2.5vw, 1.7rem); /* Responsive font size */
+    font-size: clamp(1.3rem, 2.5vw, 1.7rem);
     font-weight: 700;
     text-align: start;
 }
 
 .item p {
-    font-size: clamp(1.1rem, 2vw, 1.5rem); /* Responsive font size */
+    font-size: clamp(1.1rem, 2vw, 1.5rem); 
     font-weight: 400;
     text-align: start;
 }
@@ -248,7 +222,6 @@ nav a:hover {
     width: 100%;
     padding: 0;
     margin: 0 auto;
-    justify-content: center; 
 }
 
 .single-skill {
