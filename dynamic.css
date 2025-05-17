@@ -142,6 +142,10 @@
         text-align: justify;
     }
 
+    .item {
+        width: 450px;
+    }
+
     .item h1 {
         font-size: 1.4rem;
     }
