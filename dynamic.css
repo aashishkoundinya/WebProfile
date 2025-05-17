@@ -1,6 +1,6 @@
 @media screen and (max-width: 1200px) {
     .container {
-        width: 75vw;
+        width: 75vw;    
     }
 
     #hi, #aboutheading {
@@ -21,6 +21,10 @@
 
     .icons a {
         font-size: 4.5rem;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -55,6 +59,7 @@
 
     .item {
         max-width: 250px;
+        max-height: 500px;
     }
 
     .item h1 {
@@ -82,6 +87,16 @@
         width: 85vw;
     }
 
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .single-skill {
+        padding: 0.8rem;
+    }
+    .single-skill i {
+        font-size: 2rem;
+    }
+
 }
 
 @media screen and (max-width: 568px) {
@@ -90,7 +105,7 @@
     }
 
     #about-me {
-        text-align: center;
+        text-align: justify;
     }
 
     .item h1 {
@@ -112,5 +127,41 @@
     .icons a {
         font-size: 3rem;
         padding: 1rem;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%; 
+        gap: 1rem; 
+    }
+    
+    .single-skill {
+        padding: 0.5rem;
+        width: 100%; 
+    }
+    
+    .container {
+        width: 95vw;
+        padding: 0 0.5rem; 
+    }
+    
+    #skills .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .skills-list {
+        max-width: 320px;
+    }
+    
+    .single-skill i {
+        font-size: 1.8rem;
+    }
+    
+    .single-skill h3 {
+        font-size: 1.2rem; 
     }
 }
